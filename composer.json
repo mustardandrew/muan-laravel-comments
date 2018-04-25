@@ -1,0 +1,30 @@
+{
+    "name": "muan/laravel-comments",
+    "description": "Comments package for Laravel",
+    "verssion": "0.1.0",
+    "type": "package",
+    "keywords": ["laravel", "comments", "messages", "package"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mustard Andrew",
+            "email": "mustard.andrew@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Muan\\Comments\\": "app/"                           
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Muan\\Comments\\Providers\\CommentsServiceProvider"                               
+            ]           
+        }       
+    }
+}
