@@ -51,6 +51,7 @@ use Muan\Comments\Traits\Commentable;
 
 ## Usage
 
+```php
 $user = App\User::find(1);
 $product = App\Product::find(1);
 
@@ -65,6 +66,7 @@ $user->comments;
 
 // get comments
 $product->comments;
+```
 
 
 ## License
