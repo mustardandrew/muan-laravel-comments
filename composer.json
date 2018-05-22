@@ -17,14 +17,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Muan\\Comments\\": "app/"                           
+            "Muan\\Comments\\": "app/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Muan\\Comments\\Providers\\CommentsServiceProvider"                               
-            ]           
-        }       
+                "Muan\\Comments\\Providers\\CommentsServiceProvider"
+            ]
+        }
     }
 }

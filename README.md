@@ -1,2 +1,58 @@
-# muan-laravel-comments
+# Maun Laravel Comments package (not complated)
+
 Comments package for Laravel
+
+
+## Requirements
+
+- "php": ">=7.0"
+
+
+## Install
+
+1) Type next command in your terminal:
+
+```bash
+composer require muan/laravel-comments
+```
+
+2) Add the service provider to your config/app.php file in section providers:
+
+> Laravel 5.5 uses Package Auto-Discovery, so does not require you to manually add the ServiceProvider.
+
+```php
+'providers' => [
+    // ...
+    Muan\Comments\Providers\CommentsServiceProvider::class,
+    // ...
+],
+```
+
+3) Use the following trait on your User model
+
+```php
+// Use trait
+use Muan\Comments\Traits\CanComment;
+ 
+class User extends Authenticatable
+{
+    use CanComment;
+    
+    // ...
+}
+```
+
+Add Commentable trait to your commentable model(s).
+
+```php
+use Muan\Comments\Traits\Commentable;
+```
+
+
+## Usage
+
+
+
+## License
+
+Muan Laravel Admin package is licensed under the [MIT License](http://opensource.org/licenses/MIT).
