@@ -1,5 +1,7 @@
 # Maun Laravel Comments package (not complated)
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/b5849cb2113964311c92/maintainability)](https://codeclimate.com/github/mustardandrew/muan-laravel-comments/maintainability)
+
 Comments package for Laravel
 
 
