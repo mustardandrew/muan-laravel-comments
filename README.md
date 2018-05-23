@@ -58,16 +58,19 @@ $user = App\User::find(1);
 $product = App\Product::find(1);
 
 // Add comment
-$user->addComment($product, 'Lorem ipsum...');
+$comment = $user->addComment($product, 'Lorem ipsum...');
 
 // or
-$product->addComment($user, 'Lorem ipsum...');
+$comment = $product->addComment($user, 'Lorem ipsum...');
+
+// Approve comment
+$comment->approve();
 
 // get comments
-$user->comments;
+$comments = $user->comments;
 
 // get comments
-$product->comments;
+$comments = $product->comments;
 ```
 
 
